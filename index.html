@@ -701,33 +701,57 @@ function selectFormProduct(index){
 async function submitOrder(e){
   e.preventDefault();
   const form=e.target;
-  const consent=document.getElementById('gdprConsent');
-  if(consent && !consent.checked){ consent.focus(); return false; }
   const okBox=document.getElementById('form-success');
   const errBox=document.getElementById('form-error');
-  errBox.classList.add('hidden');
   const btn=form.querySelector('button[type="submit"]');
-  const key=form.querySelector('input[name="access_key"]').value;
+  okBox.classList.add('hidden');
+  errBox.classList.add('hidden');
 
-  // If no access key configured yet, show the thank-you locally (demo mode).
-  if(!key || key==='YOUR_ACCESS_KEY_HERE'){
-    okBox.classList.remove('hidden');
-    requestAnimationFrame(()=>okBox.classList.remove('opacity-0','-translate-y-1'));
-    setTimeout(()=>form.reset(),400);
+  // 1) GDPR consent — highlight the checkbox if unchecked (visible feedback)
+  const consent=document.getElementById('gdprConsent');
+  if(consent && !consent.checked){
+    consent.focus();
+    const wrap=consent.closest('label');
+    if(wrap){ wrap.style.color='#f87171'; setTimeout(()=>wrap.style.color='',2500); }
+    console.warn('[Granite World] Form blocked: GDPR consent not checked.');
     return false;
   }
+
+  // 2) Native validation (required fields) — show browser hints instead of silent stop
+  if(!form.checkValidity()){
+    form.reportValidity();
+    console.warn('[Granite World] Form blocked: required fields missing.');
+    return false;
+  }
+
+  const key=form.querySelector('input[name="access_key"]').value;
+  console.log('[Granite World] Submitting to Web3Forms, key present:', !!key && key!=='YOUR_ACCESS_KEY_HERE');
+
   try{
-    if(btn){btn.disabled=true;}
+    if(btn){ btn.disabled=true; btn.dataset.label=btn.textContent; btn.textContent='...'; }
     const data=new FormData(form);
-    const res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:data,headers:{'Accept':'application/json'}});
+    const res=await fetch('https://api.web3forms.com/submit',{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    });
     const json=await res.json();
+    console.log('[Granite World] Web3Forms response:', json);
     if(json.success){
       okBox.classList.remove('hidden');
       requestAnimationFrame(()=>okBox.classList.remove('opacity-0','-translate-y-1'));
       form.reset();
-    } else { errBox.classList.remove('hidden'); }
-  }catch(err){ errBox.classList.remove('hidden'); }
-  finally{ if(btn){btn.disabled=false;} }
+    } else {
+      errBox.textContent = (json && json.message) ? ('⚠ '+json.message) : errBox.textContent;
+      errBox.classList.remove('hidden');
+    }
+  }catch(err){
+    console.error('[Granite World] Submit error:', err);
+    errBox.textContent = '⚠ '+(err && err.message ? err.message : 'Network error')+' — +36 30 365 6729';
+    errBox.classList.remove('hidden');
+  }finally{
+    if(btn){ btn.disabled=false; if(btn.dataset.label) btn.textContent=btn.dataset.label; }
+  }
   return false;
 }
 
