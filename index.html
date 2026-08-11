@@ -27,7 +27,6 @@
     <meta property="og:image:alt" content="Granite World — natural stone">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="hu_HU">
-    <meta property="og:locale:alternate" content="uk_UA">
 
     <!-- TWITTER / X CARD -->
     <meta name="twitter:card" content="summary_large_image">
@@ -81,7 +80,6 @@
                 <div class="flex gap-1">
                     <button class="lbtn on text-[11px] px-2.5 py-1 rounded-full border border-transparent transition" onclick="setLang('en')">EN</button>
                     <button class="lbtn text-[11px] px-2.5 py-1 rounded-full border border-transparent text-stone-400 hover:text-white transition" onclick="setLang('hu')">HU</button>
-                    <button class="lbtn text-[11px] px-2.5 py-1 rounded-full border border-transparent text-stone-400 hover:text-white transition" onclick="setLang('uk')">UA</button>
                 </div>
             </div>
         </div>
@@ -96,6 +94,7 @@
             <nav class="hidden md:flex items-center gap-8 text-xs font-bold tracking-wider uppercase">
                 <a href="#catalog" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_catalog">Product Catalog</a>
                 <a href="#stones" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_stones">Stone Types</a>
+                <a href="catalogue.html" class="text-bronze hover:text-bronze-hover transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_about">Production</a>
                 <a href="#contacts" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_contacts">Contacts</a>
             </nav>
@@ -123,6 +122,7 @@
             <nav class="flex flex-col text-sm font-bold uppercase tracking-wider">
                 <a href="#catalog" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_catalog">Product Catalog</a>
                 <a href="#stones" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_stones">Stone Types</a>
+                <a href="catalogue.html" class="py-4 border-b border-stone-800 text-bronze hover:text-bronze-hover transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_about">Production</a>
                 <a href="#contacts" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_contacts">Contacts</a>
             </nav>
@@ -137,7 +137,6 @@
             <div class="flex gap-1 mt-8 pt-6 border-t border-stone-800">
                 <button class="mlbtn on flex-1 text-[11px] px-2 py-2 border border-transparent transition font-bold" onclick="setLang('en')">EN</button>
                 <button class="mlbtn flex-1 text-[11px] px-2 py-2 border border-stone-700 text-stone-400 hover:text-white transition font-bold" onclick="setLang('hu')">HU</button>
-                <button class="mlbtn flex-1 text-[11px] px-2 py-2 border border-stone-700 text-stone-400 hover:text-white transition font-bold" onclick="setLang('uk')">UA</button>
             </div>
         </div>
     </div>
@@ -375,6 +374,7 @@
                 <a href="https://instagram.com/granite.eu" target="_blank" rel="noopener" aria-label="Instagram @granite.eu" class="text-stone-400 hover:text-bronze transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2.1 1.4C1.3 2.7.9 3.3.6 4.1.3 4.8.1 5.7.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.3 2.2.5 2.9.3.8.7 1.4 1.4 2.1.7.7 1.3 1.1 2.1 1.4.7.3 1.6.5 2.9.5 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.3 2.9-.5.8-.3 1.4-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.7.5-1.6.5-2.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.2-.5-2.9-.3-.8-.7-1.4-1.4-2.1C21.3 1.3 20.7.9 19.9.6 19.2.3 18.3.1 17 .1 15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
                 <a href="#catalog" class="hover:text-stone-300 transition-colors" data-i="ft_catalog">Catalog</a>
                 <a href="#stones" class="hover:text-stone-300 transition-colors" data-i="ft_stones">Stones</a>
+                <a href="catalogue.html" class="hover:text-stone-300 transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" class="hover:text-stone-300 transition-colors" data-i="ft_prod">Production</a>
                 <a href="#contacts" class="hover:text-stone-300 transition-colors" data-i="ft_contacts">Contacts</a>
             </div>
@@ -408,7 +408,7 @@ const STONES = [
 const T = {
 en:{
  tb_supply:"Supply and project fulfilment across the EU", tb_hours:"Mon – Fri: 9:00 – 17:00", tb_stones:"Granite • Labradorite • Gabbro",
- nav_catalog:"Product Catalog", nav_stones:"Stone Types", nav_about:"Production", nav_contacts:"Contacts", hd_cta:"Request a Quote", mm_call:"Call: +36 30 365 6729",
+ nav_catalog:"Product Catalog", nav_stonecat:"Stone Catalogue", nav_stones:"Stone Types", nav_about:"Production", nav_contacts:"Contacts", hd_cta:"Request a Quote", mm_call:"Call: +36 30 365 6729",
  hero_badge:"Reliable natural stone supply",
  hero_h1:"Granite, Labradorite &amp; Gabbro Products",
  hero_p:"<strong class='text-white font-semibold'>Granite World</strong> supplies natural stone (granite) products directly from quarries and stone producers. We work with granite, Leznikivsky, labradorite, gabbro and other stone types — from project planning and development to preparing batches for private and commercial sites.",
@@ -468,7 +468,7 @@ en:{
 },
 hu:{
  tb_supply:"Ellátás és projekt-kivitelezés az EU-ban", tb_hours:"H – P: 9:00 – 17:00", tb_stones:"Gránit • Labradorit • Gabbró",
- nav_catalog:"Termékkatalógus", nav_stones:"Kőtípusok", nav_about:"Gyártás", nav_contacts:"Kapcsolat", hd_cta:"Árajánlatot kérek", mm_call:"Hívás: +36 30 365 6729",
+ nav_catalog:"Termékkatalógus", nav_stonecat:"Kőkatalógus", nav_stones:"Kőtípusok", nav_about:"Gyártás", nav_contacts:"Kapcsolat", hd_cta:"Árajánlatot kérek", mm_call:"Hívás: +36 30 365 6729",
  hero_badge:"Megbízható természetes kő ellátás",
  hero_h1:"Gránit, Labradorit &amp; Gabbró termékek",
  hero_p:"A <strong class='text-white font-semibold'>Granite World</strong> természetes kő (gránit) termékeket szállít közvetlenül a kőbányáktól és kőkitermelőktől. Gránittal, Leznikivszkij gránittal, labradorittal, gabbróval és más kőfajtákkal dolgozunk — a projekttervezéstől és -fejlesztéstől a magán- és kereskedelmi helyszínek tételeinek előkészítéséig.",
@@ -526,66 +526,6 @@ hu:{
  pp_h5:"5. Kapcsolat", pp_p5:"IntelSpace Kft, 1119 Budapest, Andor utca 21/C – fszt.1a · sm@graniteworld.hu · +36 30 365 6729", pp_close:"Bezárás",
  pal_h:"Teljes színpaletta", pal_p:"Több mint 20 gránit- és labradoritfajta ukrán kőbányákból. A tényleges szín és mintázat tételenként eltérhet.",
 },
-uk:{
- tb_supply:"Поставка та комплектація об'єктів по ЄС", tb_hours:"Пн – Пт: 9:00 – 17:00", tb_stones:"Граніт • Лабрадорит • Габро",
- nav_catalog:"Каталог продукції", nav_stones:"Породи каменю", nav_about:"Про виробництво", nav_contacts:"Контакти", hd_cta:"Розрахувати кошторис", mm_call:"Дзвінок: +36 30 365 6729",
- hero_badge:"Надійне постачання натурального каменю",
- hero_h1:"Вироби з граніту, лабрадориту та габро",
- hero_p:"<strong class='text-white font-semibold'>Granite World</strong> постачає вироби з натурального каменю (граніту) безпосередньо з кар'єрів та видобувачів каменю. Працюємо з гранітом, Лезниківським, лабрадоритом, габро та іншими породами — від планування й розробки проєктів до підготовки партій для приватних і комерційних об'єктів.",
- hero_cta1:"Каталог продукції", hero_cta2:"Отримати консультацію",
- feat1_h:"Прямо з кар'єрів", feat1_p:"Працюємо напряму з кар'єрами та видобувачами, контролюючи матеріал від блоку до готового виробу — тому стабільно тримаємо якість, фактуру і терміни комплектації.",
- feat2_h:"Повний цикл виробництва", feat2_p:"Підбираємо камінь, сортуємо, пакуємо та готуємо його до відвантаження. Розпил, шліфування, полірування та термообробка.",
- feat3_h:"Приватні та комерційні проєкти", feat3_p:"Комплектуємо об'єкти будь-якого масштабу: від приватних котеджів, фасадів та інтер'єрів до міського мощення та паркових зон.",
- cat_kicker:"Асортимент товарів", cat_h:"Каталог продукції", cat_p:"Оберіть необхідну категорію виробів з натурального каменю для детального розрахунку об'ємів та термінів виготовлення.",
- cat_order:"Замовити розрахунок", cat_avail:"В наявності",
- cat1_badge:"Категорія 01", cat1_h:"Гранітна облицювальна плитка", cat1_p:"Модульна облицювальна плитка, гранітна полоса та плити для цоколів, фасадів, стін і підлоги.",
- cat1_i1:"Плитка модульна полірована / термо", cat1_i2:"Плитка Токівський граніт (Carpazi)", cat1_i3:"Плитка Лабрадорит (Volga Blue / Extra Blue)", cat1_i4:"Плитка Новоданилівський граніт (Withered)",
- cat2_badge:"Сировина", cat2_h:"Гранітні блоки (сировина)", cat2_p:"Сировина з власних кар'єрів для подальшого розпилювання на сляби, плити, сходи, підвіконня та меморіальні комплекси.",
- cat2_i1:"Блоки 1, 2, 3 групи розмірів", cat2_i2:"Токівський граніт, Лабрадорит, Габро", cat2_i3:"Відбір за структурою та кольором",
- cat3_badge:"Великий формат", cat3_h:"Гранітні сляби", cat3_p:"Суцільні великоформатні плити з граніту та лабрадориту для виготовлення безшовних поверхонь, стільниць та фасадів.",
- cat3_i1:"Товщина від 20 мм до 100+ мм", cat3_i2:"Сляби Лабрадорит Extra Blue / Volga Blue", cat3_i3:"Дзеркальне полірування або термообробка",
- cat4_badge:"Мощення", cat4_h:"Гранітна бруківка та бордюри", cat4_p:"Довговічні матеріали для благоустрою територій, дорожнього покриття, паркінгів, тротуарів та паркових алей.",
- cat4_i1:"Бруківка пиляна, пиляно-колота, колота", cat4_i2:"Бордюри дорожні та тротуарні (ГП-1 — ГП-5)", cat4_i3:"Покрокова плитка та термооброблені плити",
- cat5_badge:"Вхідні групи", cat5_h:"Гранітні сходи та ступені", cat5_p:"Накладні та цільні гранітні сходинки, підсходинки та площадки для зовнішнього та внутрішнього застосування.",
- cat5_i1:"Накладні сходинки (термо / полір)", cat5_i2:"Цільні масивні ступені", cat5_i3:"Протиковзні смуги та обробка фаски",
- cat6_badge:"Індивідуальні", cat6_h:"Індивідуальні архітектурні елементи", cat6_p:"Стільниці для кухні та санвузлів, підвіконня, накривні плити для парапетів, камінні портали та декор.",
- cat6_i1:"Стільниці з полірованого граніту / габро", cat6_i2:"Підвіконня точного розміру", cat6_i3:"Накривки для заборів та парапетів",
- st_kicker:"Наші матеріали", st_h:"Граніт, Лабрадорит та Габро", st_p:"Працюємо з ключовими родовищами природного каменю. Кожна порода має унікальний відтінок, текстуру та високі фізико-механічні показники.",
- stone_type:"Тип каменю:", stone_granite:"Граніт",
- stone1_tag:"Іризація / Синій кристал", stone1_h:"Лабрадорит (Volga Blue)", stone1_p:"Елітний камінь з ефектом синього та блакитного сяйва кристалів. Застосовується для слябів, плитки, стільниць та вишуканих фасадів.", stone1_v1:"Лабрадорит", stone1_l2:"Застосування:", stone1_v2:"Екстер'єр & Інтер'єр",
- stone2_tag:"Червоно-коричневий", stone2_h:"Токівський (Carpazi)", stone2_p:"Один з найміцніших гранітів України. Виразний червоно-коричневий колір. Ідеальний для бруківки, бордюрів та фасадних плит.", stone2_l2:"Міцність:", stone2_v2:"Надвисока",
- stone3_tag:"Глибокий чорний", stone3_h:"Габро (Black Gabbro)", stone3_p:"Насичена монументальна чорна порода дрібнозернистої структури. Застосовується для колотої та пиляної бруківки, сходів і стільниць.", stone3_v1:"Габро", stone3_l2:"Водопоглинання:",
- stone4_tag:"Червоно-персиковий", stone4_h:"Новоданилівський", stone4_p:"Елегантна гранітна порода з оригінальною дрібнозернистою текстурою для вишуканого облицювання та мощення.", stone4_l2:"1 клас безпеки:",
- stone5_tag:"Світло-сірий", stone5_h:"Покостівський", stone5_p:"Класичний сірий граніт із рівномірним малюнком. Еталон для міських тротуарів, фасадних систем та масивних сходів.", stone5_l2:"Текстура:", stone5_v2:"Рівномірна",
- stone6_tag:"Яскраво-червоний", stone6_h:"Лезниківський", stone6_p:"Найвідоміший преміальний червоний граніт високої густини. Використовується для монументальних споруд та елітного декору.", stone6_l2:"Клас:", stone6_v2:"Преміум",
- ab_kicker:"Технологія & Якість", ab_h:"Повний цикл обробки натурального каменю", ab_p:"На підприємстві виконуються розпил, шліфування, полірування та термообробка каменю. Виготовляємо плитку, бруківку, бордюри, сляби, сходи, фасадні елементи та стільниці для приватних, комерційних і ландшафтних проєктів.",
- ab_f1_h:"Полірована поверхня", ab_f1_p:"Дзеркальний блиск, що повністю розкриває природний колір та малюнок каменю (для інтер'єрів, стільниць, фасадів).",
- ab_f2_h:"Термооброблена / фламована поверхня", ab_f2_p:"Шорстка протиковзка фактура для безпечного пересування взимку (для бруківки, сходів, тротуарів).",
- ab_f3_h:"Пиляна та колота поверхня", ab_f3_p:"Природний монументальний рельєф для бруківки та цокольних систем.",
- ab_qa:"Гарантія якості", ab_box_h:"Контроль від блоку до готовності", ab_box_p:"Підбираємо камінь, сортуємо, пакуємо на дерев'яні піддони та готуємо його до швидкого відвантаження. Типові замовлення комплектуються в найкоротші терміни.",
- ab_s1:"Природний камінь", ab_s2:"Геометрія порізки", ab_cta:"Замовити розрахунок партії",
- co_kicker:"Формування замовлення", co_h:"Контакти & Консультація", co_p:"Зв'яжіться з нами для розрахунку об'єму, підбору родовища граніту або узгодження графіку відвантаження.",
- co_sales:"Відділ продажів & Відвантаження:", co_email:"E-mail для кошторисів:", co_addr:"Офіс / Адреса:", co_legal:"Granite World — Постачання виробів з природного каменю.", co_legal_label:"Реквізити компанії",
- fm_h:"Форма розрахунку вартості", fm_p:"Вкажіть параметри вашого проєкту для підготовки специфікації.",
- fm_name:"Ваше ім'я", fm_name_ph:"Ім'я або назва компанії", fm_phone:"Телефон / Viber / Telegram", fm_email:"Ваш E-mail", fm_email_ph:"you@example.com",
- fm_product:"Продукція", fm_stone:"Порода каменю", fm_vol:"Орієнтовний об'єм та коментар",
- fm_vol_ph:"Вкажіть метраж (м²), товщину, тип поверхні (полір / термо) або параметри виробу...",
- fm_send:"Відправити на розрахунок", fm_ok:"✓ Дякуємо! Ваша заявка отримана. Менеджер зв'яжеться з вами найближчим часом.",
- opts_product:["Плитка та полоса","Блоки гранітні","Сляби з граніту / лабрадориту","Бруківка та бордюри","Сходи та ступені","Стільниці / Підвіконня"],
- opts_stone:["Лабрадорит (Volga Blue / Extra Blue)","Токівський граніт (Carpazi)","Габро (Black Gabbro)","Новоданилівський граніт","Покостівський граніт","Лезниківський граніт","Інша порода / Потрібна порада"],
- ft_copy:"© Granite World — Вироби з натурального каменю (граніт, лабрадорит, габро).", ft_catalog:"Каталог", ft_stones:"Породи", ft_prod:"Виробництво", ft_contacts:"Контакти",
- co_social:"Соцмережі:",
- fm_consent:"Я погоджуюся на обробку моїх персональних даних відповідно до <button type='button' onclick='openPrivacy()' class='text-bronze underline hover:text-bronze-hover'>Політики конфіденційності</button>.",
- fm_err:"Сталася помилка. Зателефонуйте нам: +36 30 365 6729.",
- ck_title:"Ми використовуємо файли cookie.", ck_text:"Цей сайт використовує файли cookie для забезпечення роботи та покращення зручності. Продовжуючи, ви погоджуєтеся на обробку даних.", ck_more:"Політика конфіденційності", ck_accept:"Прийняти", ck_decline:"Відхилити",
- pp_title:"Політика конфіденційності", pp_controller:"Контролер даних: IntelSpace Kft · EU VAT HU32512036 · Adószám 32512036-2-34",
- pp_h1:"1. Які дані ми збираємо", pp_p1:"Через форму запиту ми збираємо ваше ім'я, телефон, email та деталі звернення. Ми обробляємо ці дані виключно для підготовки пропозиції та зв'язку з вами.",
- pp_h2:"2. Правова підстава", pp_p2:"Обробка ґрунтується на вашій згоді (GDPR ст. 6(1)(a)) та на діях за вашим запитом перед укладенням договору (ст. 6(1)(b)).",
- pp_h3:"3. Зберігання та передача", pp_p3:"Дані зберігаються лише стільки, скільки потрібно для обробки звернення та виконання правових зобов'язань. Ми не продаємо ваші дані. Їх можуть обробляти наші постачальники email- та форм-сервісів від нашого імені.",
- pp_h4:"4. Ваші права", pp_p4:"Ви маєте право на доступ, виправлення, видалення, обмеження чи заперечення обробки ваших даних, а також на їх переносимість. Для реалізації прав пишіть на sm@graniteworld.hu.",
- pp_h5:"5. Контакти", pp_p5:"IntelSpace Kft, 1119 Budapest, Andor utca 21/C – fszt.1a · sm@graniteworld.hu · +36 30 365 6729", pp_close:"Закрити",
- pal_h:"Повна палітра кольорів", pal_p:"Понад 20 різновидів граніту та лабрадориту з українських кар'єрів. Реальний колір і малюнок можуть відрізнятися залежно від партії.",
-}
 };
 
 const PALETTE = [
@@ -689,12 +629,12 @@ function applyT(){
     if(T[lang][k]!==undefined) el.placeholder=T[lang][k];
   });
   document.documentElement.lang=lang;
-  document.title = lang==='hu' ? 'Granite World — Természetes kő termékek' : lang==='uk' ? 'Granite World — Вироби з натурального каменю' : 'Granite World — Natural Stone Products';
+  document.title = lang==='hu' ? 'Granite World — Természetes kő termékek' : 'Granite World — Natural Stone Products';
 }
 
 function setLang(l){
   lang=l;
-  document.querySelectorAll('.lbtn,.mlbtn').forEach(b=>b.classList.toggle('on', b.textContent.trim()===(l==='uk'?'UA':l.toUpperCase())));
+  document.querySelectorAll('.lbtn,.mlbtn').forEach(b=>b.classList.toggle('on', b.textContent.trim()===l.toUpperCase()));
   applyT(); buildCats(); buildStones(); buildPalette(); fillSelects();
 }
 
