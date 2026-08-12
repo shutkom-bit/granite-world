@@ -96,6 +96,7 @@
                 <a href="#stones" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_stones">Stone Types</a>
                 <a href="catalogue.html" class="text-bronze hover:text-bronze-hover transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_about">Production</a>
+                <a href="#terms" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_terms">Terms</a>
                 <a href="#contacts" class="text-stone-300 hover:text-bronze transition-colors" data-i="nav_contacts">Contacts</a>
             </nav>
             <div class="flex items-center gap-4">
@@ -124,6 +125,7 @@
                 <a href="#stones" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_stones">Stone Types</a>
                 <a href="catalogue.html" class="py-4 border-b border-stone-800 text-bronze hover:text-bronze-hover transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_about">Production</a>
+                <a href="#terms" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_terms">Terms</a>
                 <a href="#contacts" onclick="toggleMobileMenu()" class="py-4 border-b border-stone-800 text-stone-200 hover:text-bronze transition-colors" data-i="nav_contacts">Contacts</a>
             </nav>
             <a href="tel:+36303656729" class="mt-8 w-full flex items-center justify-center gap-2 py-4 bg-bronze hover:bg-bronze-hover text-white font-heading font-bold text-xs uppercase tracking-wider transition-all">
@@ -253,6 +255,16 @@
     </section>
 
     <!-- ══════════ 4. CONTACTS ══════════ -->
+    <!-- ══ DELIVERY & TERMS ══ -->
+    <section id="terms" class="py-24 bg-stone-950 border-b border-stone-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="text-bronze font-bold text-xs uppercase tracking-widest block mb-2" data-i="terms_kicker">Commercial Terms</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white uppercase tracking-tight mb-4" data-i="terms_h">Delivery &amp; Terms</h2>
+            <p class="text-stone-300 text-sm leading-relaxed mb-10 max-w-2xl" data-i="terms_p">Prices include 27% VAT on EXW terms; delivery is quoted separately. Prices are per m², in EUR.</p>
+            <div class="mt-4" data-i="terms_body"></div>
+        </div>
+    </section>
+
     <section id="contacts" class="py-24 bg-stone-950">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
@@ -376,6 +388,7 @@
                 <a href="#stones" class="hover:text-stone-300 transition-colors" data-i="ft_stones">Stones</a>
                 <a href="catalogue.html" class="hover:text-stone-300 transition-colors" data-i="nav_stonecat">Stone Catalogue</a>
                 <a href="#about" class="hover:text-stone-300 transition-colors" data-i="ft_prod">Production</a>
+                <a href="#terms" class="hover:text-stone-300 transition-colors" data-i="nav_terms">Terms</a>
                 <a href="#contacts" class="hover:text-stone-300 transition-colors" data-i="ft_contacts">Contacts</a>
             </div>
         </div>
@@ -408,7 +421,8 @@ const STONES = [
 const T = {
 en:{
  tb_supply:"Supply and project fulfilment across the EU", tb_hours:"Mon – Fri: 9:00 – 17:00", tb_stones:"Granite • Labradorite • Gabbro",
- nav_catalog:"Product Catalog", nav_stonecat:"Stone Catalogue", nav_stones:"Stone Types", nav_about:"Production", nav_contacts:"Contacts", hd_cta:"Request a Quote", mm_call:"Call: +36 30 365 6729",
+ nav_catalog:"Product Catalog", nav_stonecat:"Stone Catalogue", nav_stones:"Stone Types", nav_about:"Production", nav_terms:"Terms", nav_contacts:"Contacts", hd_cta:"Request a Quote",
+ terms_kicker:"Commercial Terms", terms_h:"Delivery &amp; Terms", terms_p:"Prices include 27% VAT on EXW terms; delivery is quoted separately. Prices are per m², in EUR.", terms_body:"<div class='max-w-3xl space-y-8'><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Granite tiles</h3><p class='text-stone-400 text-sm leading-relaxed'>Modular granite tiles, polished / thermo (flamed) finish. Standard sizes: 600×400, 600×300, 300×150, 300×300, 300×400 mm; thickness 20–50 mm. Custom sizes are available at a +40% surcharge over the base price.</p></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Delivery &amp; payment</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>Prepayment: 50% of the total amount.</li><li>Delivery terms: EXW — manufacturer’s premises, under Incoterms® 2020, by road.</li><li>Risk and title pass to the buyer when the goods are made available at the manufacturer’s premises.</li><li>The price does not include delivery and packaging costs.</li><li>Production and delivery lead time is agreed per order. The manufacturer is not liable for delays caused by circumstances beyond its control (force majeure, official measures, strikes, raw-material shortages, etc.).</li><li>Custom orders for granite products (countertops, railings, spheres, vases, columns) are priced individually.</li></ul></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Packaging</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>Big-Bag (flexible container), 1–1.5 t — €5 / pc.</li><li>Pallet, 1–1.5 t — €7 / pc.</li><li>Packaging is shown as a separate line on the invoice; the type is chosen by the manufacturer.</li></ul></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Certificates &amp; claims</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>A conformity certificate is provided for every order (strength, frost resistance, material quality) in accordance with the applicable EN standards.</li><li>Minor dimensional and surface variations within permitted tolerances are not defects.</li><li>Claims may be submitted within 8 calendar days of receipt, in writing with photographic documentation.</li></ul></div></div>", mm_call:"Call: +36 30 365 6729",
  hero_badge:"Reliable natural stone supply",
  hero_h1:"Granite, Labradorite &amp; Gabbro Products",
  hero_p:"<strong class='text-white font-semibold'>Granite World</strong> supplies natural stone (granite) products directly from quarries and stone producers. We work with granite, Leznikivsky, labradorite, gabbro and other stone types — from project planning and development to preparing batches for private and commercial sites.",
@@ -468,7 +482,8 @@ en:{
 },
 hu:{
  tb_supply:"Ellátás és projekt-kivitelezés az EU-ban", tb_hours:"H – P: 9:00 – 17:00", tb_stones:"Gránit • Labradorit • Gabbró",
- nav_catalog:"Termékkatalógus", nav_stonecat:"Kőkatalógus", nav_stones:"Kőtípusok", nav_about:"Gyártás", nav_contacts:"Kapcsolat", hd_cta:"Árajánlatot kérek", mm_call:"Hívás: +36 30 365 6729",
+ nav_catalog:"Termékkatalógus", nav_stonecat:"Kőkatalógus", nav_stones:"Kőtípusok", nav_about:"Gyártás", nav_terms:"Feltételek", nav_contacts:"Kapcsolat", hd_cta:"Árajánlatot kérek",
+ terms_kicker:"Kereskedelmi feltételek", terms_h:"Szállítás és feltételek", terms_p:"Az árak 27% ÁFA-t tartalmaznak, EXW feltételek szerint; a szállítás külön kerül kiszámításra. Az árak m²-re, EUR-ban értendők.", terms_body:"<div class='max-w-3xl space-y-8'><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Gránitcsempe</h3><p class='text-stone-400 text-sm leading-relaxed'>Moduláris gránitcsempe, polírozott / termo (hőkezelt) felülettel. Szabványos méretek: 600×400, 600×300, 300×150, 300×300, 300×400 mm; vastagság 20–50 mm. Egyedi méretek is rendelhetők: +40% felár az alapár felett.</p></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Szállítás és fizetés</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>Előleg: a teljes összeg 50%-a.</li><li>Szállítási feltételek: EXW — a gyártó telephelye, az Incoterms® 2020 szerint, közúti szállítással.</li><li>A kockázatviselés és a tulajdonjog a vevőre száll át, amikor az áru a gyártó telephelyén rendelkezésre áll.</li><li>Az ár a szállítási és csomagolási költségeket nem tartalmazza.</li><li>A gyártási és szállítási határidő megrendelésenként egyeztetett. A gyártó nem felel a tőle független okokból (vis maior, hatósági intézkedések, sztrájk, nyersanyaghiány stb.) eredő késedelmekért.</li><li>A gránit termékek (pultlapok, korlátok, gömbök, vázák, oszlopok) egyedi megrendeléseit egyedileg árazzuk.</li></ul></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Csomagolás</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>Big-Bag (flexibilis konténer), 1–1,5 t — 5 € / db.</li><li>Raklap, 1–1,5 t — 7 € / db.</li><li>A csomagolás díja a számlán külön tételként jelenik meg; a típust a gyártó választja meg.</li></ul></div><div><h3 class='font-heading text-xl font-bold text-white uppercase mb-3'>Tanúsítványok és reklamáció</h3><ul class='list-disc pl-5 space-y-2 text-stone-400 text-sm leading-relaxed'><li>Minden megrendelt tételhez megfelelőségi tanúsítványt biztosítunk (szilárdság, fagyállóság, anyagminőség) a hatályos EN-szabványoknak megfelelően.</li><li>A méretek és felületi jellemzők kisebb eltérései a megengedett tűréshatárokon belül nem minősülnek hibának.</li><li>Reklamáció az átvételtől számított 8 naptári napon belül, írásban, fényképes dokumentációval nyújtható be.</li></ul></div></div>", mm_call:"Hívás: +36 30 365 6729",
  hero_badge:"Megbízható természetes kő ellátás",
  hero_h1:"Gránit, Labradorit &amp; Gabbró termékek",
  hero_p:"A <strong class='text-white font-semibold'>Granite World</strong> természetes kő (gránit) termékeket szállít közvetlenül a kőbányáktól és kőkitermelőktől. Gránittal, Leznikivszkij gránittal, labradorittal, gabbróval és más kőfajtákkal dolgozunk — a projekttervezéstől és -fejlesztéstől a magán- és kereskedelmi helyszínek tételeinek előkészítéséig.",
