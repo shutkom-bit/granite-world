@@ -58,6 +58,12 @@
         .lbtn.on{background:#9c6b3b;color:#fff;border-color:#9c6b3b}
         .mlbtn.on{background:#9c6b3b;color:#fff;border-color:#9c6b3b}
     html{scroll-padding-top:84px;scroll-behavior:smooth;overflow-x:clip}
+.palette-strip{display:flex;gap:3px;align-items:flex-end;height:112px}
+.pkey{flex:1 1 0;min-width:13px;height:80px;background:var(--kc);border-radius:2px;position:relative;transition:height .18s ease,box-shadow .18s ease;border:1px solid rgba(0,0,0,.05)}
+.pkey:hover{height:104px;box-shadow:0 8px 20px rgba(0,0,0,.22);z-index:3}
+.pkey-name{position:absolute;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);white-space:nowrap;font-size:11px;color:#332f2a;background:#fff;border:1px solid #e2ddd5;padding:3px 9px;border-radius:3px;opacity:0;pointer-events:none;transition:opacity .15s;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+.pkey:hover .pkey-name{opacity:1}
+@media(max-width:640px){.palette-strip{overflow-x:auto;gap:2px}.pkey{min-width:16px}}
 </style>
 </head>
 <body class="antialiased selection:bg-bronze selection:text-white">
@@ -195,6 +201,16 @@
     <!-- ══════════ 2. STONES ══════════ -->
 
     <!-- ══════════ 3. PRODUCTION ══════════ -->
+    <!-- ══════════ PALETTE ══════════ -->
+    <section id="palette" class="py-24 bg-stone-50 border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <span class="text-bronze font-bold text-xs uppercase tracking-widest block mb-2" data-i="pals_k">Our Colours</span>
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-stone-900 uppercase tracking-tight mb-3" data-i="pals_h">Our Palette</h2>
+            <p class="text-stone-500 text-sm mb-10 max-w-2xl" data-i="pals_p">23 granite, labradorite and gabbro colours from Ukrainian quarries — tap a key to open the stone with prices.</p>
+            <div class="palette-strip"><a href="catalogue.html?stone=15" class="pkey" style="--kc:#9e5c40" aria-label="Maple Red GR6 (Leznyki)"><span class="pkey-name">Maple Red GR6</span></a><a href="catalogue.html?stone=17" class="pkey" style="--kc:#735f53" aria-label="Star of Ukraine (Didkovytsky)"><span class="pkey-name">Star of Ukraine</span></a><a href="catalogue.html?stone=8" class="pkey" style="--kc:#725748" aria-label="Flower of Ukraine (Mezhyrichenskyi)"><span class="pkey-name">Flower of Ukraine</span></a><a href="catalogue.html?stone=16" class="pkey" style="--kc:#865131" aria-label="Rosso Toledo (Yemelyanivsky)"><span class="pkey-name">Rosso Toledo</span></a><a href="catalogue.html?stone=4" class="pkey" style="--kc:#6f544d" aria-label="Rosso Santiago (Kapustynskyi)"><span class="pkey-name">Rosso Santiago</span></a><a href="catalogue.html?stone=19" class="pkey" style="--kc:#64573e" aria-label="Ukraine Autumn (Vasylkivsky)"><span class="pkey-name">Ukraine Autumn</span></a><a href="catalogue.html?stone=3" class="pkey" style="--kc:#794b36" aria-label="Novodanilovsky (Withered)"><span class="pkey-name">Novodanilovsky</span></a><a href="catalogue.html?stone=18" class="pkey" style="--kc:#5b4135" aria-label="Rosa Raveno (Zhadkivsky)"><span class="pkey-name">Rosa Raveno</span></a><a href="catalogue.html?stone=0" class="pkey" style="--kc:#54352a" aria-label="Rosso Carpazi (Tokovskiy)"><span class="pkey-name">Rosso Carpazi</span></a><a href="catalogue.html?stone=20" class="pkey" style="--kc:#5c6a5e" aria-label="Black Lime (Lukovetsky)"><span class="pkey-name">Black Lime</span></a><a href="catalogue.html?stone=14" class="pkey" style="--kc:#3d412e" aria-label="Pink Grey (Starobabansky)"><span class="pkey-name">Pink Grey</span></a><a href="catalogue.html?stone=13" class="pkey" style="--kc:#383b33" aria-label="Leopard (Korninsky)"><span class="pkey-name">Leopard</span></a><a href="catalogue.html?stone=10" class="pkey" style="--kc:#272f1a" aria-label="Verde Oliva (Maslovskyi)"><span class="pkey-name">Verde Oliva</span></a><a href="catalogue.html?stone=5" class="pkey" style="--kc:#918f8e" aria-label="Sofiyivsky"><span class="pkey-name">Sofiyivsky</span></a><a href="catalogue.html?stone=7" class="pkey" style="--kc:#767b88" aria-label="Space Gray (Pokostivskyi)"><span class="pkey-name">Space Gray</span></a><a href="catalogue.html?stone=9" class="pkey" style="--kc:#7b766e" aria-label="Kostiantynivskyi GG8"><span class="pkey-name">Kostiantynivskyi GG8</span></a><a href="catalogue.html?stone=6" class="pkey" style="--kc:#727467" aria-label="Real Grey (Yantsivskyi)"><span class="pkey-name">Real Grey</span></a><a href="catalogue.html?stone=11" class="pkey" style="--kc:#626266" aria-label="Tansky Granite"><span class="pkey-name">Tansky Granite</span></a><a href="catalogue.html?stone=2" class="pkey" style="--kc:#191b19" aria-label="Volga Blue Neverovske"><span class="pkey-name">Volga Blue Neverovske</span></a><a href="catalogue.html?stone=1" class="pkey" style="--kc:#121314" aria-label="Volga Blue"><span class="pkey-name">Volga Blue</span></a><a href="catalogue.html?stone=22" class="pkey" style="--kc:#61605d" aria-label="Ukraine Blue Night"><span class="pkey-name">Ukraine Blue Night</span></a><a href="catalogue.html?stone=12" class="pkey" style="--kc:#0c120d" aria-label="Gabbro Bukinske"><span class="pkey-name">Gabbro Bukinske</span></a><a href="catalogue.html?stone=21" class="pkey" style="--kc:#040607" aria-label="Ukraine Night (Kamenobrodsky)"><span class="pkey-name">Ukraine Night</span></a></div>
+        </div>
+    </section>
+
     <section id="about" class="py-24 bg-white border-b border-stone-200">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -413,7 +429,7 @@ en:{
  feat2_h:"Full Production Cycle", feat2_p:"We select, sort, pack and prepare stone for shipment. Sawing, grinding, polishing and thermal treatment.",
  feat3_h:"Private &amp; Commercial Projects", feat3_p:"We fulfil projects of any scale: from private houses, facades and interiors to urban paving and park areas.",
  cat_kicker:"Product Range", cat_h:"Product Catalog", cat_p:"Select the required category of natural stone products for a detailed calculation of volumes and production timelines.",
- cat_order:"Request Calculation", cat_varieties:"Check Stone Varieties", cat_avail:"In stock",
+ cat_order:"Request Calculation", cat_varieties:"Check Stone Varieties", pals_k:"Our Colours", pals_h:"Our Palette", pals_p:"23 granite, labradorite and gabbro colours from Ukrainian quarries — tap a key to open the stone with prices.", cat_avail:"In stock",
  cat1_badge:"Category 01", cat1_h:"Granite Cladding Tiles", cat1_p:"Modular cladding tiles, granite strips and slabs for plinths, facades, walls and floors.",
  cat1_i1:"Modular tiles polished / thermal", cat1_i2:"Tokivsky granite tiles (Carpazi)", cat1_i3:"Labradorite tiles (Volga Blue / Extra Blue)", cat1_i4:"Novodanilovsky granite tiles (Withered)",
  cat2_badge:"Raw Material", cat2_h:"Raw Granite Blocks", cat2_p:"Raw material from our own quarries for further sawing into slabs, plates, stairs, sills and memorial complexes.",
@@ -474,7 +490,7 @@ hu:{
  feat2_h:"Teljes gyártási ciklus", feat2_p:"Kiválasztjuk, osztályozzuk, csomagoljuk és szállításra készítjük a követ. Fűrészelés, csiszolás, polírozás és hőkezelés.",
  feat3_h:"Magán- és kereskedelmi projektek", feat3_p:"Bármilyen léptékű projektet kivitelezünk: magánházaktól, homlokzatoktól és belső terektől a városi burkolatokig és parkokig.",
  cat_kicker:"Termékkínálat", cat_h:"Termékkatalógus", cat_p:"Válassza ki a szükséges természetes kő termékkategóriát a mennyiségek és gyártási határidők részletes kiszámításához.",
- cat_order:"Számítást kérek", cat_varieties:"Kőfajták megtekintése", cat_avail:"Raktáron",
+ cat_order:"Számítást kérek", cat_varieties:"Kőfajták megtekintése", pals_k:"Színeink", pals_h:"Színpaletta", pals_p:"23 gránit, labradorit és gabbró szín ukrajnai bányákból — koppintson egy billentyűre a kő és árak megnyitásához.", cat_avail:"Raktáron",
  cat1_badge:"01. kategória", cat1_h:"Gránit burkolólapok", cat1_p:"Moduláris burkolólapok, gránitszalagok és lapok lábazatokhoz, homlokzatokhoz, falakhoz és padlókhoz.",
  cat1_i1:"Moduláris lapok polírozott / hőkezelt", cat1_i2:"Tokivszkij gránit lapok (Carpazi)", cat1_i3:"Labradorit lapok (Volga Blue / Extra Blue)", cat1_i4:"Novodanilovszkij gránit lapok (Withered)",
  cat2_badge:"Nyersanyag", cat2_h:"Nyers gránittömbök", cat2_p:"Nyersanyag saját kőbányáinkból, további fűrészeléshez lemezekké, lapokká, lépcsőkké, párkányokká és emlékművekké.",
