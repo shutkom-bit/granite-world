@@ -432,7 +432,7 @@ en:{
  feat2_h:"Full Production Cycle", feat2_p:"We select, sort, pack and prepare stone for shipment. Sawing, grinding, polishing and thermal treatment.",
  feat3_h:"Private &amp; Commercial Projects", feat3_p:"We fulfil projects of any scale: from private houses, facades and interiors to urban paving and park areas.",
  cat_kicker:"Product Range", cat_h:"Product Catalog", cat_p:"Select the required category of natural stone products for a detailed calculation of volumes and production timelines.",
- cat_order:"Request Calculation", cat_avail:"In stock",
+ cat_order:"Request Calculation", cat_varieties:"Check Stone Varieties", cat_avail:"In stock",
  cat1_badge:"Category 01", cat1_h:"Granite Cladding Tiles", cat1_p:"Modular cladding tiles, granite strips and slabs for plinths, facades, walls and floors.",
  cat1_i1:"Modular tiles polished / thermal", cat1_i2:"Tokivsky granite tiles (Carpazi)", cat1_i3:"Labradorite tiles (Volga Blue / Extra Blue)", cat1_i4:"Novodanilovsky granite tiles (Withered)",
  cat2_badge:"Raw Material", cat2_h:"Raw Granite Blocks", cat2_p:"Raw material from our own quarries for further sawing into slabs, plates, stairs, sills and memorial complexes.",
@@ -493,7 +493,7 @@ hu:{
  feat2_h:"Teljes gyártási ciklus", feat2_p:"Kiválasztjuk, osztályozzuk, csomagoljuk és szállításra készítjük a követ. Fűrészelés, csiszolás, polírozás és hőkezelés.",
  feat3_h:"Magán- és kereskedelmi projektek", feat3_p:"Bármilyen léptékű projektet kivitelezünk: magánházaktól, homlokzatoktól és belső terektől a városi burkolatokig és parkokig.",
  cat_kicker:"Termékkínálat", cat_h:"Termékkatalógus", cat_p:"Válassza ki a szükséges természetes kő termékkategóriát a mennyiségek és gyártási határidők részletes kiszámításához.",
- cat_order:"Számítást kérek", cat_avail:"Raktáron",
+ cat_order:"Számítást kérek", cat_varieties:"Kőfajták megtekintése", cat_avail:"Raktáron",
  cat1_badge:"01. kategória", cat1_h:"Gránit burkolólapok", cat1_p:"Moduláris burkolólapok, gránitszalagok és lapok lábazatokhoz, homlokzatokhoz, falakhoz és padlókhoz.",
  cat1_i1:"Moduláris lapok polírozott / hőkezelt", cat1_i2:"Tokivszkij gránit lapok (Carpazi)", cat1_i3:"Labradorit lapok (Volga Blue / Extra Blue)", cat1_i4:"Novodanilovszkij gránit lapok (Withered)",
  cat2_badge:"Nyersanyag", cat2_h:"Nyers gránittömbök", cat2_p:"Nyersanyag saját kőbányáinkból, további fűrészeléshez lemezekké, lapokká, lépcsőkké, párkányokká és emlékművekké.",
@@ -590,9 +590,12 @@ function buildCats(){
           ${c.items.map(i=>`<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-bronze"></span>${t(i)}</li>`).join('')}
         </ul>
       </div>
-      <button onclick="selectFormProduct(${i})" class="inline-flex items-center justify-between w-full py-3 px-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-wider text-stone-900 hover:bg-bronze hover:border-bronze transition-all">
-        <span>${t('cat_order')}</span><span>&rarr;</span>
-      </button>
+      <div class="mt-auto space-y-2.5">
+        <button onclick="selectFormProduct(${i})" class="inline-flex items-center justify-between w-full py-3 px-4 bg-white border border-stone-200 text-xs font-bold uppercase tracking-wider text-stone-900 hover:bg-bronze hover:border-bronze transition-all">
+          <span>${t('cat_order')}</span><span>&rarr;</span>
+        </button>
+        <a href="catalogue.html" class="inline-flex items-center justify-center w-full py-3 px-4 border border-bronze text-xs font-bold uppercase tracking-wider text-bronze hover:bg-bronze hover:text-white transition-all">${t('cat_varieties')}</a>
+      </div>
     </div>`).join('');
 }
 
